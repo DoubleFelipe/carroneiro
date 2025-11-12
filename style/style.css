@@ -1,0 +1,177 @@
+* {
+    /*comando reset do css */
+    margin: 0;
+    padding: 0px;
+
+
+}
+
+/*header*/
+
+.top-bar {
+    display: flex;
+    align-items: center;
+    background-color: #022F3D;
+
+
+}
+
+.top-bar form {
+    position: relative;
+    flex: 400px;
+    margin-right: 20px;
+}
+
+.home {
+    width: 100px;
+    height: 100px;
+
+}
+
+.home:hover {
+    scale: 1.1;
+}
+
+
+.pesquisar {
+    display: flex;
+    flex: 1;
+    max-width: 100vw;
+    min-width: 25vw;
+}
+
+.pesquisar input {
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+}
+
+#lupa {
+    width: 0vmin;
+    position: absolute;
+    top: 50%;
+    right: 1vmin;
+    transform: translateY(-50%);
+}
+
+.suporte {
+    background: linear-gradient(blue, rgb(4, 0, 255),rgb(0, 47, 255));
+    color: #fff;
+    padding: 10px;
+    border-radius: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    margin-left: 10px;
+
+}
+
+
+.icons a {
+    padding: 30px;
+    font-size: 40px;
+    text-decoration: none;
+    color: black;
+}
+
+#carrinho:hover {
+    scale: 1.1;
+}
+
+.suporte:hover {
+    scale: 1.1;
+
+}
+
+
+/*banner*/
+
+.carrousel {
+    margin: 100px auto;
+    width: 90%;
+    height: 300px;
+    display: flex;
+    overflow: auto;
+}
+.group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    width: 100%;
+}
+
+/* banners: cada um com sua imagem de fundo */
+.banner, .banner2, .banner3 {
+    flex: 1 1 0;                  /* dividir o espaço igualmente */
+    height: 300px;                /* mesma altura do carrousel */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: .2em;
+    display: flex;
+    color: #fff;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.6);
+}
+
+
+.banner {
+    background-image: url('https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=1200&auto=format&fit=crop&q=80');
+}
+.banner2 {
+    background-image: url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=1200&auto=format&fit=crop&q=80');
+}
+.banner3 {
+    background-image: url('https://paradisoturismo.com.br/wp-content/uploads/2021/09/swiss9-1924x1283.jpg');
+}
+
+
+/*conteiners*/
+
+.marcas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+    
+
+}
+
+.marcas a {
+    width: 250px;
+    height: 100px;
+    object-fit: contain;
+    background: #e5e5e5;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.marcas a:hover {
+    scale: 1.1;
+    transition: all 0.3s ease;
+}
+
+/*responsividade para dispositivos moveis*/
+
+@media (max-width: 900px) {
+    .top-bar {
+        display: flex;
+        background-color: #022F3D;
+        flex-wrap: wrap;
+    }
+
+
+    .suporte {
+        width: 30vw;
+        text-align: center;
+    }
+
+    .suporte:hover {
+        scale: 1.05;
+
+    }
+
+
+}
