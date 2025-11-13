@@ -57,7 +57,7 @@
 }
 
 .suporte {
-    background: linear-gradient(blue, rgb(4, 0, 255),rgb(0, 47, 255));
+    background: linear-gradient(blue, rgb(4, 0, 255), rgb(0, 47, 255));
     color: #fff;
     padding: 10px;
     border-radius: 20px;
@@ -87,70 +87,109 @@
 
 /*banner*/
 
-.carrousel {
-    margin: 100px auto;
-    width: 90%;
+.banner {
+    background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=60');
+    background-size: cover;
+    background-position: center;
     height: 300px;
-    display: flex;
-    overflow: auto;
-}
-.group {
+    width: 90%;
+    margin: 2em auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1em;
-    width: 100%;
-}
-
-/* banners: cada um com sua imagem de fundo */
-.banner, .banner2, .banner3 {
-    flex: 1 1 0;                  /* dividir o espaço igualmente */
-    height: 300px;                /* mesma altura do carrousel */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: .2em;
-    display: flex;
-    color: #fff;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.6);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
 }
 
 
-.banner {
-    background-image: url('https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=1200&auto=format&fit=crop&q=80');
+.banner h1 {
+    font-size: 24px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 20px;
+    border-radius: 8px;
 }
-.banner2 {
-    background-image: url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=1200&auto=format&fit=crop&q=80');
+
+/*titulo*/
+#titulo {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 30px;
+
 }
-.banner3 {
-    background-image: url('https://paradisoturismo.com.br/wp-content/uploads/2021/09/swiss9-1924x1283.jpg');
-}
+
 
 
 /*conteiners*/
 
-.marcas {
+.destaques {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
     padding: 30px;
-    
 
 }
 
-.marcas a {
+.destaques p {
+    color: white;
+    font-size: 20px;
+    margin-top: 4em;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.destaques a {
+    text-decoration: none;
     width: 250px;
     height: 100px;
     object-fit: contain;
-    background: #e5e5e5;
+    border-radius: 5px;
     padding: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.marcas a:hover {
+.grecia {
+    background-image: url('https://images.squarespace-cdn.com/content/v1/55b7e44de4b0af4724ac5dd6/1648050127805-AR2YZP95C9IV0UC7MHK8/grecia-onde-ficar.jpg?format=2500w');
+    background-size: cover;
+    background-position: center;
+}
+
+.acapulco {
+    background-image: url('https://a.travel-assets.com/findyours-php/viewfinder/images/res70/228000/228069-Guerrero.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.egito {
+    background-image: url('https://vidanoegito.com/wp-content/uploads/2019/11/esfinge.jpg?w=1024');
+    background-size: cover;
+    background-position: center;
+}
+
+.russia {
+    background-image: url('https://imagens.ebc.com.br/mAIQzKJCH_9ZC_G2Uk6uQikD8fE=/1170x700/smart/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/2025/05/09/54506396682_e86f68eb83_o.jpg?itok=Gg_HuKBj');
+    background-size: cover;
+    background-position: center;
+}
+
+.destaques a:hover {
     scale: 1.1;
     transition: all 0.3s ease;
+}
+
+/*footer*/
+footer {
+    background-color: #022F3D;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /*responsividade para dispositivos moveis*/
@@ -162,8 +201,16 @@
         flex-wrap: wrap;
     }
 
+    .pesquisar {
+        display: flex;
+        flex: 1 1 50%;
+        width: 100vw;
+        
+    }
+
 
     .suporte {
+
         width: 30vw;
         text-align: center;
     }
