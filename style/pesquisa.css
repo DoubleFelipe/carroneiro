@@ -6,6 +6,12 @@
 
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 /*header*/
 
 .top-bar {
@@ -191,9 +197,10 @@ footer {
     align-items: center;
     justify-content: space-around;
     padding: 20px 0;
-    margin-top: 7.8em;
+    margin-top: auto;
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
+    width: 100%;
 }
 
 footer a {
