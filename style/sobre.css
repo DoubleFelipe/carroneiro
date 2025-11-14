@@ -114,102 +114,21 @@ nav a:hover {
     scale: 1.1;
 }
 
-/*banner*/
 
-.banner {
-    background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=60');
-    background-size: cover;
-    background-position: center;
-    height: 300px;
-    width: 90%;
-    margin: 2em auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
+.sobre {
+    width: 90vw;
+    margin-top: 2em;
+    margin-left: 2em;
     padding: 20px;
-    border-radius: 20px;
-}
-
-
-.banner h1 {
-    font-size: 24px;
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 10px 20px;
-    border-radius: 8px;
-}
-
-/*titulo*/
-#titulo {
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-size: 30px;
-
-}
-
-
-
-/*conteiners*/
-
-.destaques {
-    display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
-    padding: 30px;
-
-}
-
-.destaques p {
-    color: white;
-    font-size: 20px;
-    margin-top: 4em;
     font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    font-size: 15px;
+    background-color: gainsboro;
+    border-radius: 8px;
 
 }
 
-.destaques a {
-    text-decoration: none;
-    width: 250px;
-    height: 100px;
-    object-fit: contain;
-    border-radius: 5px;
-    padding: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-.grecia {
-    background-image: url('https://images.squarespace-cdn.com/content/v1/55b7e44de4b0af4724ac5dd6/1648050127805-AR2YZP95C9IV0UC7MHK8/grecia-onde-ficar.jpg?format=2500w');
-    background-size: cover;
-    background-position: center;
-}
-
-.acapulco {
-    background-image: url('https://a.travel-assets.com/findyours-php/viewfinder/images/res70/228000/228069-Guerrero.jpg');
-    background-size: cover;
-    background-position: center;
-}
-
-.egito {
-    background-image: url('https://vidanoegito.com/wp-content/uploads/2019/11/esfinge.jpg?w=1024');
-    background-size: cover;
-    background-position: center;
-}
-
-.russia {
-    background-image: url('https://imagens.ebc.com.br/mAIQzKJCH_9ZC_G2Uk6uQikD8fE=/1170x700/smart/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/2025/05/09/54506396682_e86f68eb83_o.jpg?itok=Gg_HuKBj');
-    background-size: cover;
-    background-position: center;
-}
-
-.destaques a:hover {
-    scale: 1.1;
-    transition: all 0.3s ease;
-}
 
 /*footer*/
 footer {

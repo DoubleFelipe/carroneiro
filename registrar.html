@@ -4,10 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre</title>
-    <link rel="stylesheet" href="style/sobre.css" />
+    <title>Registro</title>
+    <link rel="stylesheet" href="style/registro.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script src="script/script.js"></script>
 </head>
 
 <body>
@@ -40,26 +39,39 @@
             <a href="registrar.html">Cadastrar</a>
         </nav>
         <!--aqui comeca o html da parte de baixo-->
-        <div class="sobre">
-            <h1>Sobre o Caroneiro</h1>
-            <p>O Caroneiro é uma plataforma inovadora que conecta viajantes em busca de companhia para suas aventuras.
-                Nossa missão é tornar as viagens mais acessíveis, seguras e divertidas, promovendo a troca cultural e a
-                amizade entre pessoas de diferentes origens.</p>
-            <h2>Nossa História</h2>
-            <p>Fundado em 2024 por um grupo de entusiastas de viagens, o Caroneiro nasceu da necessidade de encontrar
-                parceiros de viagem confiáveis. Desde então, temos crescido rapidamente, atendendo a milhares de
-                usuários em todo o Brasil e além.</p>
-            <h2>O que oferecemos</h2>
-            <ul>
-                <li>Perfis verificados de viajantes</li>
-                <li>Sistema de avaliação e comentários</li>
-                <li>Ferramentas de comunicação seguras</li>
-                <li>Suporte ao cliente dedicado</li>
-            </ul>
-            <h2>Junte-se a nós!</h2>
-            <p>Se você ama viajar e quer compartilhar suas experiências com outros aventureiros, o Caroneiro é o lugar
-                certo para você. Cadastre-se hoje mesmo e comece a explorar o mundo com novos amigos!</p>
-        </div>
+                <!-- Form de cadastro -->
+        <section class="form">
+            <form id="register-form" action="#" method="post" autocomplete="on" novalidate>
+                <h2>Criar conta</h2>
+
+                <label for="nome">Nome completo</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="seu@exemplo.com" required>
+
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="(99) 99999-9999" required>
+
+                <label for="cidade">Cidade</label>
+                <input type="text" id="cidade" name="cidade" placeholder="Sua cidade" required>
+
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" name="senha" minlength="6" placeholder="Senha" required>
+
+                <label for="confirma">Confirmar senha</label>
+                <input type="password" id="confirma" name="confirma" minlength="6" placeholder="Confirme a senha" required>
+
+                <label class="checkbox">
+                    <input type="checkbox" id="termos" name="termos" required>
+                    Aceito os termos de uso
+                </label>
+
+                <p id="form-error" class="form-error" aria-live="polite"></p>
+
+                <button type="submit" class="btn-submit">Registrar</button>
+            </form>
+        </section>
     </main>
     <footer>
         <div class="footer-content">
@@ -77,7 +89,7 @@
         </div>
     </footer>
 
-
+    <script src="script/registro.js"></script>
 </body>
 
 

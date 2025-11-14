@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+    <link rel="stylesheet" href="style/chat.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+
+        <div class="top-bar">
+            <!--aqui comeca o html da parte de cima-->
+            <a href="index.html"><img src="img/logo.png" alt="Logo Tênis" class="home"></a>
+            <div class="pesquisar">
+                <form action="pesquisar.html">
+                    <input type="text" placeholder="Buscar destino, cidade ou viajante..." id="barra">
+                    <a class="fa-solid fa-magnifying-glass" id="lupa"></a>
+                </form>
+
+            </div>
+            <a class="suporte" href="sobre.html">SOBRE</a>
+            <div class="icons">
+                <a href="perfil.html" class="fa-solid fa-user" alt="usuario" id="carrinho"></a>
+            </div>
+                        <div class="user-info">
+                <span id="current-user">Carregando...</span>
+                <button id="logout-btn" class="logout-btn">Sair</button>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="destinos.html">Destinos</a>
+            <a href="chat.html">Viajantes</a>
+            <a href="chat.html">Grupos</a>
+            <a href="registrar.html">Cadastrar</a>
+        </nav>
+        <!--aqui comeca o html da parte de baixo-->
+        <div class="chat-container">
+            <!-- Lista de usuários -->
+            <aside class="users-list">
+                <h2>Usuários</h2>
+                <div id="users-container"></div>
+            </aside>
+
+            <!-- Área de chat -->
+            <section class="chat-area">
+                <div class="chat-header">
+                    <h3 id="chat-title">Selecione um usuário</h3>
+                </div>
+
+                <div class="messages" id="messages-container"></div>
+
+                <form id="message-form" class="message-form">
+                    <input type="text" id="message-input" placeholder="Digite sua mensagem..." disabled>
+                    <button type="submit" id="send-btn" disabled>Enviar</button>
+                </form>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Caroneiro. Todos os direitos reservados.</p>
+            <p>Desenvolvido por Equipe Caroneiro.</p>
+        </div>
+        <div class="content">
+            <p>Redes Sociais - links</p>
+            <a href="https://x.com/?lang=pt">
+                <p>Twitter</p>
+            </a>
+            <a href="https://www.facebook.com/?locale=pt_BR">
+                <p>Facebook</p>
+            </a>
+        </div>
+    </footer>
+
+    <script src="script/chat.js"></script>
+</body>
+
+
+</html>

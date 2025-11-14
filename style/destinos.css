@@ -114,33 +114,6 @@ nav a:hover {
     scale: 1.1;
 }
 
-/*banner*/
-
-.banner {
-    background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=60');
-    background-size: cover;
-    background-position: center;
-    height: 300px;
-    width: 90%;
-    margin: 2em auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    padding: 20px;
-    border-radius: 20px;
-}
-
-
-.banner h1 {
-    font-size: 24px;
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 10px 20px;
-    border-radius: 8px;
-}
-
 /*titulo*/
 #titulo {
     text-align: center;
@@ -218,7 +191,7 @@ footer {
     align-items: center;
     justify-content: space-around;
     padding: 20px 0;
-    margin-top: 20px;
+    margin-top: 7.8em;
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
 }
